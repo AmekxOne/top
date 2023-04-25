@@ -49,14 +49,36 @@ body{
 
 #header-bottom-left{
     grid-area: 2 / 1 / 2 / 2;
-    background-color: red;
-
+    
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+
+    padding-left: 40px;
 }
 
+#header-bottom-right{
+    grid-area: 2 / 2 / 2 / 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#header-bottom-right div{
+    height: 30px;
+    width: 30%;
+    border-radius: 15px;
+
+    background-color: skyblue;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #dashboard{
