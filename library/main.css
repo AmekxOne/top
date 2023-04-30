@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 10dvh;
+    width: 100dvw;
+    background-color: #ffffff;
+    filter: drop-shadow(0px 1px 10px #c6c6c6);
+}
+
+#logo{
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#logo span{
+    padding-left: 10%;
+}
+
+#main{
+    height: 90dvh;
+    width: 100dvhw;
+    background-color: #f0eef1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+#add-book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-book button{
+    height: 50px;
+    width: 150px;
+    
+    font-size: 1.2em;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modal{
+    height: 100dvh;
+    width: 100dvw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal div{
+    height: 400px;
+    width: 200px;
+    background-color: red;
+}
+
+.hidden{
+    visibility: hidden;
+}
