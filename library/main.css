@@ -56,6 +56,8 @@ header{
 #modal{
     height: 100dvh;
     width: 100dvw;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0.9;
 
     position: absolute;
     top: 0;
@@ -66,12 +68,94 @@ header{
     align-items: center;
 }
 
-#modal div{
+#modal #test{
     height: 400px;
-    width: 200px;
-    background-color: red;
+    width: 300px;
+    background-color: #F0EEF1;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    gap: 2.5px;
+}
+
+#test *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+#test div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#test button{
+    height: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .hidden{
     visibility: hidden;
+}
+
+#library{
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
+.book{
+    display: flex;
+    justify-content: center;
+}
+
+.book-container{
+    height: 300px;
+    width: 350px;
+    background-color: #FFFBFB;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+
+    justify-items: center;
+    align-items: center;
+
+    border-radius: 10px;
+    filter: drop-shadow(0px 1px 10px #c6c6c6);
+
+    font-weight: 600;
+}
+
+.container-btn{
+    width: 325px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-read{
+    background-color: #8FE68C;
+}
+
+.btn-remove{
+    background-color: #F0EEF1;
 }
